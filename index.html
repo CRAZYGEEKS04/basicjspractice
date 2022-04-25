@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,21 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="tempstyle.css">
+    
 </head>
 
 <body>
-    <div>
-        <h1>Enter the Temperature</h1>
-        <form id="tempcalc" onsubmit="change(); return false">
-            <input type="number" placeholder="Enter the temperature " id="inp">
-            <select name="temp" id="temp">
+     
+        <div class="header">
+            
+        <h1>TEMPERATURE  CALCULATOR</h1>
+        </div>
+        
+        <h3 class="manish">Enter the Temperature</h3>
+        
+             
+            
+            <form id="tempcalc" onsubmit="change()"; return false>
+            
+             <div class="foziya">   
+            <input type="number" placeholder="Enter the temperature " id="inp" class="common">
+            <select name="temp"  id="temp" class="common">
                <option value="cel">Celsius</option>
                <option value="far">Fahrenheit</option>
             </select>
-            <br>
-            <button type="submit">Submit</button>
-
-
+            </div>
+             
+            <div class="mack">
+            <button class="common">SUBMIT</button>
+            </div>
+        
             <br>
             <span id="ans"></span>
         </form>
